@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {
+            /* display: inline; posso usar esse método para deixar em uma única linha*/
+            background-color: lightgrey;
+
+            height: 300px;
+            width: 300px;
+            /*
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategrey;
+            */ 
+            border: 10px solid darkslategrey; /*Aqui está a forma simpificada para o uso da borda*/
+            /*
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            */
+            padding: 10px; /* Aqui no padding basta somente pôr uma vez que vai valer para os 4 lados, também posso colocar dois valores tipo: "padding: 10px 20px" em cima e em baixo recebem o mesmo valor, e as laterais ficam valendo 20px*/
+
+            /* Posso usar o "margin: auto" para centralizar o elemento quando ele for uma caixa
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+
+            margin: 20px 20px 40px 20px;
+            */
+            margin: 30px auto;
+            /* Posso usar também "margin: 20px auto 40px auto;" para centralizar lateralmente*/
+            /*
+            outline: 5px;
+            outline-style: dashed;
+            outline-color: #7192BE;
+            */
+            outline: 5px dashed #7192BE;
+        }
+
+        a {
+            /*
+            border-width: 5px;
+            border-style: dashed;
+            border-color: red;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            */
+            text-decoration: none;
+            color: black;
+            border: 5px dashed #326273;
+            padding: 10px;
+        }
+        a:hover {
+            color: #C42021;
+        }
+
+        a:active {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

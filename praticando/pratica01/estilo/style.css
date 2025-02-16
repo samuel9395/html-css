@@ -1,0 +1,249 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --cor-fundo: #cfcfcf;
+    --cor-opcional: #e21d1dd3;
+}
+
+@font-face {
+    font-family: 'Coolvetica';
+    src: url("../fontes/Coolvetica Rg It.otf") format("opentype");
+}
+
+body {
+    background-color: white;
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+    /*Aqui removemos a barra de rolagem horizontal*/
+    /*
+    ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    }   
+    */
+}
+
+h1 {
+    font-family: 'Coolvetica';
+    font-size: 3em;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    background-image: linear-gradient(to right, var(--cor-opcional), transparent);
+    text-indent: 8px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 25px 0px 0px 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Coolvetica';
+    font-size: 1.5em;
+    font-weight: lighter;
+    margin-left: 10px;
+    bottom: 10px;
+}
+
+main {
+    background-color: white;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+article {
+    background-color: var(--cor-fundo);
+    list-style-position: inside;
+    columns: 2;
+    padding: 10px;
+    border-radius: 25px 5px 5px 5px;
+}
+
+article > h2 {
+    color: black;
+    padding: 5px;
+    margin-bottom: 7px;
+    height: 20px;
+}
+
+article > p {
+    padding: 5px;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+section {
+    background-color: var(--cor-fundo);
+    padding: 0px;
+    margin: 0px;
+}
+
+section > h1 {
+    text-align: left;
+    background-color: white;
+    margin-bottom: 15px;
+}
+
+.carros {
+    list-style-position: inside;
+    columns: 2;
+}
+
+.carros > h2 {
+    font-family: 'Coolvetica';
+    font-weight: normal;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.carros > p {
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+.carros > picture {
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.carros > picture > img {
+    margin-top: 20px;
+    padding: 5px;
+
+}
+
+footer {
+    background-color: var(--cor-opcional);
+    margin: 0p;
+    padding: 0px;
+    
+}
+
+footer > p {
+    color: white;
+    font-family: 'Coolvetica';
+    font-size: 1.3em;
+    text-align: center;
+    padding: 7px;
+}
+
+@media screen and (min-width:900px ) and (max-width: 1200px) {
+    article {
+        padding: 5px;
+    }
+    article > h2 {
+        padding: 5px;
+        margin: 5px;
+    }
+    article > p {
+        padding: 5px;
+        margin: 5px;
+        box-sizing: border-box;
+    }
+
+    .carros {
+        list-style-position: inside;
+        columns: 2;
+        padding: 15px;
+        margin: 10px;
+    }
+    
+    picture.fiat {
+        display: inline-block;
+        box-sizing: border-box;
+        margin-top: 100px;
+    }
+    picture.Verkocht {
+        display: inline-block;
+        box-sizing: border-box;
+        margin-top: 100px;
+    }
+ 
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 899px) {
+    article {
+        list-style-position: inside;
+        columns: 1;
+        padding: 10px;
+    }
+
+    .carros {
+        list-style-position: inside;
+        columns: 1;
+        padding: 15px;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        background-color: var(--cor-opcional);
+    }
+    article {
+        list-style-position: inside;
+        columns: 1;
+    }
+
+    .carros {
+        list-style-position: inside;
+        columns: 1;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .carros > p{
+        margin: 0px 0px 30px;
+    }
+
+    picture {
+        display: inline-block;
+        box-sizing: border-box;
+        margin-top: 120px;
+    }
+
+    picture.fiat {
+        display: inline-block;
+        box-sizing: border-box;
+        margin-top: 120px;
+    }
+
+
+    @media screen and (max-width: 390px) {
+        article {
+            padding: 5px;
+        }
+        article > h2{
+            margin-bottom: 30px;
+        }
+
+        picture.fiat {
+            display: inline-block;
+            box-sizing: border-box;
+            margin-top: 200px;
+        }
+        picture.peugeot {
+            display: inline-block;
+            box-sizing: border-box;
+            margin-top: 100px;
+        }
+    }
+}

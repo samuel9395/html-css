@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+* {
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #e0e0e0;
+    /* MEDIDAS PARA FONTES
+    Medidas absolutas
+    cm, mm, in, px, pt, pc
+
+    Medidas relativas
+    em, ex, rem, vw, vh, %
+    16px feralmente  = 1em
+    */
+    font-size: 16px; /* 16px é o tamanho padrão da fonte no navegador */
+    font-weight: bolder;
+    font-style: italic;
+    text-align: justify;
+}
+
+h1, h2 {
+    /* shorthan font
+    font-sytle -> font-weight -> font-size -> font-family  
+    
+     font-family: 'Work Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 2em;
+    font-style: italic;
+    */
+    font: italic bolder 3em 'Work Sans', sans-serif;
+}
+
+h2 {
+    font: bold 2em 'Arial';
+}
+
+@media screen and (max-width: 1024px) and (min-width: 701px){
+    body {
+        background-color: rgb(154, 168, 154);
+        color: white;
+        align-items: center;
+        padding: 7px;
+        text-align: center;
+    }
+     p {
+        text-align: justify;
+     }
+}
+
+@media screen and (max-width: 700px){
+    body {
+        background-color: antiquewhite;
+        align-items: center;
+        padding: 10px;
+        text-align: center;
+    }
+
+    p {
+        text-align: justify;
+    }
+}

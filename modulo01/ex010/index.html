@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagem/links.png" type="image/x-icon">
+    <title>Trabalhando com Links</title>
+    <style>
+        body{
+            margin-left: 13px;
+        }
+        h1{
+            text-align: center;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Links</h1>
+    <h2>Usando links externos</h2>
+    <p>Você pode acessar o repositório público do Guanabara no <a href="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/10%20-%20Liga%C3%A7%C3%B5es%20em%20toda%20parte.pdf" target="_blank" rel="external" style="color: rgb(92, 146, 11);" title="Repositório do Guanabara">GitHub</a></p>
+    <p>Você também pode acessar o canal gratuito do Gustavo Guanabara no <a href="https://youtu.be/LeOVXQDsAIY" target="_blank" rel="external" style="color: rgb(209, 4, 4);" title="YouTube do Guanabara">YouTube</a></p>
+    <h2>Usando links internos</h2>
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar tabém a minha 
+        <a href="pag002.html" target="_self" rel="next" title="PÁGINA 2">
+            segunda página
+            <img src="imagem/seta-direita.png" alt="seta direita">
+        </a>
+    </p>
+    <p>Você também pode acessar a página de <a href="noticias/news.html" title="NEWS">notícias
+        <img src="imagem/seta-direita.png" alt="">
+    </a></p>
+
+    <h1 style="display: flex; text-align: right;">Links para Download</h1>
+    <ul>
+        <li><a href="livro/10 - Ligações em toda parte.pdf" download="10 - Ligações em toda parte.pdf" type="aplication/pdf" title="Arquivo PDF">Baixar o livro em PDF</a></li>
+        <li><a href="livro/10 - Ligações em toda parte.zip" download="10 - Ligações em toda parte.zip" type="aplication/zip" title="Arquivo ZIP">Livro compactado em ZIP</a></li>
+    </ul>
+</body>
+</html>

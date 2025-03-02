@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+@font-face {
+    font-family: 'Freshman';
+    src: url('../fontes/Freshman.ttf');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+body {
+    background-color: white;
+    font-family: "Permanent Marker", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+}
+
+header {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+header > h1 {
+    font-family: 'Freshman';
+    font-size: 44px;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+header p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+}
+
+header > p a {
+    color: white;
+    text-decoration: none;
+}
+
+header > p:hover a {
+    text-decoration: underline;
+}
+
+section {
+    padding: 30px;
+    height: 100%;
+}
+
+section p {
+    font-size: 27px;
+}
+
+section.normal {
+    display: inline-block;
+    padding: 5px;
+    text-align: justify;
+    width: 50%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+section.normal > p {
+    padding: 5px;
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+
+section.imagem {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 60vh;
+    text-align: justify;
+}
+
+section.imagem > p {
+    display: inline-block;
+    padding: 5px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.514);
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+}
+
+footer {
+    margin: 0px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+}
+
+footer > p a {
+    color: yellow;
+    text-decoration: none;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+        iframe#msg {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt veniam adipisci fugit vitae accusantium deleniti labore eaque, soluta, voluptatibus neque a cumque minus aut nihil earum. Consequatur dolor hic culpa?</p>
+
+    <ul>
+        <li><a href="paginasextras/pagina001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginasextras/pagina002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginasextras/pagina003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti ipsum incidunt quis amet ipsa dolorem adipisci! Totam sint illo odio possimus, quam nemo, magnam reiciendis quia praesentium minus autem ex.</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem consectetur sit fugit iure, architecto magni error. Assumenda, non quidem natus eveniet corporis sunt laboriosam? Harum id eum corrupti optio illum!</p> <img src='imagens/CEV-logo.webp'></iframe>" frameborder="1">
+        <p id="msg">Infelizmente seu navegador não é compatível com isso.</p> 
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, quod ad delectus corporis cupiditate consequuntur ipsum neque sint? Totam praesentium aspernatur delectus eum deleniti temporibus similique at amet rem nemo?</p>
+</body>
+</html>

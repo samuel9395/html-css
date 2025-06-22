@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #dad5d5;
+            text-align: center;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: auto;
+            width: 500px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Formulário</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="off"> <!-- O método POST é usado para enviar dados de forma segura.-->
+        <h2>Cadastro</h2>
+        <p>Preencha os campos abaixo:</p>
+        <!-- O atributo autocomplete="off" desativa o preenchimento automático do navegador. -->
+        <!-- Com o métofo get só pode ser enviado 3k bytes | O GET não pode ser usado para enviar dados sensíveis, e arquivos com fotos... -->
+        <p>
+            <label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome" placeholder="Digite seu nome">
+        </p>
+        <p>
+            <label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome" placeholder="Digite seu sobrenome">
+        </p>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

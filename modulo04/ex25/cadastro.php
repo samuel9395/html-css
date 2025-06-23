@@ -1,1 +1,1 @@
-Login efetuado com sucesso!
+Dados enviados com sucesso!
